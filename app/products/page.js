@@ -4,7 +4,8 @@ import ProductCards from "./ProductCards";
 
 const Products = async () => {
   const res = await fetch(
-    "https://product-management-server-omega.vercel.app/b2bproducts"
+    "https://product-management-server-omega.vercel.app/b2bproducts",
+    { next: { revalidate: 0 } }
   );
   const data = await res.json();
   console.log(data);
