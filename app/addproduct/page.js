@@ -3,7 +3,7 @@ import { Field, Form, Formik } from "formik";
 
 const AddProduct = () => {
   const handleSubmit = (data) => {
-    fetch(`http://localhost:5000/b2bproduct`, {
+    fetch(`https://product-management-server-omega.vercel.app/b2bproduct`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
