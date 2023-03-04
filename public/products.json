@@ -1,0 +1,37 @@
+[
+  {
+    "_id": 1,
+    "name": "Kirk Graves",
+    "shortDescription": "interdum feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus",
+    "price": "$36.45",
+    "image": "https://cnn.com"
+  },
+  {
+    "_id": 2,
+    "name": "Burton Cooley",
+    "shortDescription": "elementum, lorem ut aliquam iaculis, lacus pede sagittis augue, eu",
+    "price": "$4.66",
+    "image": "https://bbc.co.uk"
+  },
+  {
+    "_id": 3,
+    "name": "Alika Jefferson",
+    "shortDescription": "dolor. Quisque tincidunt pede ac urna. Ut tincidunt vehicula risus.",
+    "price": "$76.33",
+    "image": "http://wikipedia.org"
+  },
+  {
+    "_id": 4,
+    "name": "Samantha Garner",
+    "shortDescription": "enim mi tempor lorem, eget mollis lectus pede et risus.",
+    "price": "$51.52",
+    "image": "https://walmart.com"
+  },
+  {
+    "_id": 5,
+    "name": "Rhea Snider",
+    "shortDescription": "egestas rhoncus. Proin nisl sem, consequat nec, mollis vitae, posuere",
+    "price": "$82.39",
+    "image": "http://instagram.com"
+  }
+]
