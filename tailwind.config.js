@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         borderGray: "#cacaca",
       },
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit,minmax(10rem,1fr))",
+      },
     },
   },
   plugins: [require("daisyui")],
