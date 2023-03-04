@@ -1,7 +1,7 @@
 import { HiPlus } from "react-icons/hi";
-import OrderCard from "../orders/OrderCard";
+import OrderCard from "./OrderCard";
 
-const Customers = async () => {
+const Orders = async () => {
   const res = await fetch(
     "https://product-management-server-omega.vercel.app/orders"
   );
@@ -9,7 +9,7 @@ const Customers = async () => {
   return (
     <section className="w-full px-5">
       <div className="flex justify-between my-5">
-        <h1 className="text-2xl capitalize font-semibold">My Customers</h1>
+        <h1 className="text-2xl capitalize font-semibold">My Orders</h1>
         <button className="btn btn-outline btn-sm border-borderGray">
           <HiPlus />
         </button>
@@ -23,4 +23,4 @@ const Customers = async () => {
   );
 };
 
-export default Customers;
+export default Orders;
