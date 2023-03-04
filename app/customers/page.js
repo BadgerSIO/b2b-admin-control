@@ -1,5 +1,5 @@
 import { HiPlus } from "react-icons/hi";
-import OrderCard from "../orders/OrderCard";
+import CustomerCard from "./CustomerCard";
 
 const Customers = async () => {
   const res = await fetch(
@@ -16,7 +16,7 @@ const Customers = async () => {
       </div>
       <div className="grid grid-cols-1 ">
         {data?.map((order) => (
-          <OrderCard key={order._id} order={order} />
+          <CustomerCard key={order._id} order={order} />
         ))}
       </div>
     </section>
