@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HiPlus } from "react-icons/hi";
 import ProductCards from "./ProductCards";
 
@@ -11,9 +12,12 @@ const Products = async () => {
     <section className="w-full px-5">
       <div className="flex justify-between my-5">
         <h1 className="text-2xl capitalize font-semibold">My Products</h1>
-        <button className="btn btn-outline btn-sm border-borderGray">
+        <Link
+          href={`/addproduct`}
+          className="btn btn-outline btn-sm border-borderGray"
+        >
           <HiPlus />
-        </button>
+        </Link>
       </div>
       <div className="grid grid-cols-1 ">
         {data?.map((product) => (
