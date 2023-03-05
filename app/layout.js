@@ -7,6 +7,7 @@ import {
   HiOutlineInboxIn,
   HiOutlineFolder,
   HiOutlineUsers,
+  HiOutlineMenuAlt1,
 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { BsBox } from "react-icons/bs";
@@ -26,11 +27,11 @@ export default function RootLayout({ children }) {
   return (
     <html data-theme="wireframe" lang="en">
       <body className={`${poppins.className} bg-gray-100`}>
-        <div className="drawer">
+        <div className="drawer ">
           <input id="b2bdrawer" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content flex flex-col">
             {/* <!-- Navbar --> */}
-            <div className="w-full navbar bg-white border-b border-borderGray">
+            <div className="w-full navbar bg-white border-b border-borderGray container lg:mt-5 shadow lg:rounded-md">
               <div className="flex-none lg:hidden">
                 <label htmlFor="b2bdrawer" className="btn btn-square btn-ghost">
                   <svg
@@ -49,20 +50,17 @@ export default function RootLayout({ children }) {
                 </label>
               </div>
               <div className="flex-1 px-2 mx-2">
-                <label htmlFor="b2bdrawer" className=" hidden lg:inline-block">
-                  <AiOutlineClose />
+                <label
+                  htmlFor="b2bdrawer"
+                  className=" hidden lg:inline-block mr-2"
+                >
+                  <HiOutlineMenuAlt1 />
                 </label>
                 <HiSearch className="text-xl" />
               </div>
               <div className="flex-none hidden lg:block">
                 <ul className="menu menu-horizontal">
                   {/* <!-- Navbar menu content here --> */}
-                  <li>
-                    <a>Navbar Item 1</a>
-                  </li>
-                  <li>
-                    <a>Navbar Item 2</a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -74,7 +72,7 @@ export default function RootLayout({ children }) {
             <ul className="menu p-4 w-80 bg-base-100">
               {/* <!-- Sidebar content here --> */}
               <li>
-                <Link href={"/"} className="flex items-center">
+                <Link href={"/"} className="flex items-center mt-5">
                   <HiOutlineHome className="text-3xl text-gray-500" /> Dashboard
                 </Link>
               </li>
@@ -107,7 +105,7 @@ export default function RootLayout({ children }) {
               </li>
 
               <li className="absolute -top-1 right-0 ">
-                <label htmlFor="b2bdrawer" className="btn btn-square btn-ghost">
+                <label htmlFor="b2bdrawer" className="cursor-pointer">
                   <AiOutlineClose />
                 </label>
               </li>
