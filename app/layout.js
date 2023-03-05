@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
               <div className="flex-1 px-2 mx-2">
                 <label
                   htmlFor="b2bdrawer"
-                  className=" hidden lg:inline-block mr-2"
+                  className=" hidden lg:inline-block mr-2 cursor-pointer"
                 >
                   <HiOutlineMenuAlt1 />
                 </label>

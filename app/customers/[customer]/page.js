@@ -12,7 +12,7 @@ const Customer = async ({ params }) => {
   const date = new Date(timestamp * 1000); // convert Unix timestamp to JavaScript Date object
   const humanized = formatDistance(date, new Date(), { addSuffix: true });
   return (
-    <section className="container p-5 ">
+    <section className="container p-5 max-w-lg  ">
       <div className="text-center">
         <Image
           src={userImage}
@@ -32,11 +32,11 @@ const Customer = async ({ params }) => {
         </div>
       </div>
       <div className="grid gap-3 grid-cols-fluid mt-5">
-        <div className="p-3 bg-white text-center space-y-2 shadow rounded border border-borderGray lg:p-5">
+        <div className="p-3 bg-white text-center space-y-2  rounded border border-borderGray lg:p-5">
           <h2 className="text-lg lg:text-2xl font-semibold">Total Paid</h2>
           <h2>{totalMoney}</h2>
         </div>
-        <div className="p-3 bg-white text-center space-y-2 shadow rounded border border-borderGray lg:p-5">
+        <div className="p-3 bg-white text-center space-y-2  rounded border border-borderGray lg:p-5">
           <h2 className="text-lg lg:text-2xl font-semibold">Ordered Items</h2>
           <h2>{totalItems}</h2>
         </div>

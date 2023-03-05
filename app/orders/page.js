@@ -7,14 +7,14 @@ const Orders = async () => {
   );
   const data = await res.json();
   return (
-    <section className="w-full px-5">
+    <section className="w-full px-5 container">
       <div className="flex justify-between my-5">
         <h1 className="text-2xl capitalize font-semibold">My Orders</h1>
         <button className="btn btn-outline btn-sm border-borderGray">
           <HiPlus />
         </button>
       </div>
-      <div className="grid grid-cols-1 ">
+      <div className="grid grid-cols-fluid2 gap-3 lg:gap-5 ">
         {data?.map((order) => (
           <OrderCard key={order._id} order={order} />
         ))}

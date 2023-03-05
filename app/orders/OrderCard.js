@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { formatDistance } from "date-fns";
 const OrderCard = ({ order }) => {
-  const { userName, userImage, lastOrdered, totalMoney, totalItems } = order;
+  const { userName, userImage, lastOrdered, totalMoney, totalItems, _id } =
+    order;
   const timestamp = lastOrdered;
   const date = new Date(timestamp * 1000); // convert Unix timestamp to JavaScript Date object
   const humanized = formatDistance(date, new Date(), { addSuffix: true });
@@ -32,7 +33,7 @@ const OrderCard = ({ order }) => {
       </div>
       <div className="col-span-1  justify-self-end place-self-center ">
         <Link
-          href={`/`}
+          href={`/customers/${_id}`}
           className="btn btn-xs btn-outline capitalize border-borderGray "
         >
           View

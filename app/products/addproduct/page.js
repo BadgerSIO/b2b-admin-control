@@ -14,7 +14,7 @@ const AddProduct = () => {
       .then((data) => "");
   };
   return (
-    <section className="p-5">
+    <section className="p-5 container max-w-md border border-borderGray mt-5 rounded bg-white ">
       <h1 className="text-xl font-semibold">Add product</h1>
       <Formik
         initialValues={{ name: "", shortDescription: "", price: "", image: "" }}
@@ -22,27 +22,27 @@ const AddProduct = () => {
           handleSubmit(values);
         }}
       >
-        <Form className="">
+        <Form className="space-y-3 lg:space-y-5">
           <Field
-            className="w-full my-2 p-2"
+            className="w-full bg-gray-50 border border-borderGray my-2 p-2"
             placeholder="Product Name"
             name="name"
             type="text"
           ></Field>
           <Field
-            className="w-full my-2 p-2"
+            className="w-full bg-gray-50 border border-borderGray my-2 p-2"
             placeholder="Product short description"
             name="shortDescription"
             type="text"
           ></Field>
           <Field
-            className="w-full my-2 p-2"
+            className="w-full bg-gray-50 border border-borderGray my-2 p-2"
             placeholder="Product Price"
             name="price"
             type="text"
           ></Field>
           <Field
-            className="w-full my-2 p-2"
+            className="w-full bg-gray-50 border border-borderGray my-2 p-2"
             placeholder="Product Image Url"
             name="image"
             type="url"

@@ -9,17 +9,17 @@ const Products = async () => {
   );
   const data = await res.json();
   return (
-    <section className="w-full px-5">
+    <section className="w-full px-5 container">
       <div className="flex justify-between my-5">
         <h1 className="text-2xl capitalize font-semibold">My Products</h1>
         <Link
-          href={`/addproduct`}
+          href={`/products/addproduct`}
           className="btn btn-outline btn-sm border-borderGray"
         >
           <HiPlus />
         </Link>
       </div>
-      <div className="grid grid-cols-1 ">
+      <div className="grid grid-cols-fluid2 gap-3 lg:gap-5 ">
         {data?.map((product) => (
           <ProductCards key={product._id} product={product} />
         ))}

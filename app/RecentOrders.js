@@ -6,7 +6,7 @@ const RecentOrders = async () => {
   );
   const data = await res.json();
   return (
-    <div className="grid grid-cols-1 ">
+    <div className="grid grid-cols-fluid2 gap-3 lg:gap-5 ">
       {data?.map((order) => (
         <OrderCard key={order._id} order={order} />
       ))}
