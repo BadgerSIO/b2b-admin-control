@@ -11,7 +11,7 @@ const AddProduct = () => {
       body: JSON.stringify(data),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => "");
   };
   return (
     <section className="p-5">

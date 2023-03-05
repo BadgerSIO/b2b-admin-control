@@ -4,10 +4,8 @@ import Link from "next/link";
 import React from "react";
 
 const CustomerCard = ({ order }) => {
-  const { userName, userImage, lastOrdered, totalMoney, totalItems } = order;
-  const timestamp = lastOrdered;
-  const date = new Date(timestamp * 1000); // convert Unix timestamp to JavaScript Date object
-  const humanized = formatDistance(date, new Date(), { addSuffix: true });
+  const { userName, userImage, totalItems, _id } = order;
+
   return (
     <div className="grid grid-cols-4 gap-3 border-b border-borderGray py-3">
       <div className="col-span-1">
@@ -26,7 +24,7 @@ const CustomerCard = ({ order }) => {
       </div>
       <div className="col-span-1  justify-self-end place-self-center ">
         <Link
-          href={`/`}
+          href={`/customers/${_id}`}
           className="btn btn-xs btn-outline capitalize border-borderGray "
         >
           View

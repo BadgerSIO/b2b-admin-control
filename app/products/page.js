@@ -8,7 +8,6 @@ const Products = async () => {
     { next: { revalidate: 0 } }
   );
   const data = await res.json();
-  console.log(data);
   return (
     <section className="w-full px-5">
       <div className="flex justify-between my-5">

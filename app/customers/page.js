@@ -6,7 +6,6 @@ const Customers = async (props) => {
     "https://product-management-server-omega.vercel.app/orders"
   );
   const data = await res.json();
-  console.log(props);
   return (
     <section className="w-full px-5 container">
       <div className="flex justify-between my-5">
